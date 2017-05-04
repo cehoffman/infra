@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-tcp-ingress
+  namespace: kube-system
+data:
+  4022: "default/work-tunnel-tcp:22"
+  1194: "default/work-tunnel-tcp:1194"
